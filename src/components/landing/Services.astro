@@ -1,0 +1,47 @@
+---
+import fabricacion from '../../images/fabricacion.svg'
+import mantenimiento from '../../images/mantenimiento.svg'
+import adecuacion from '../../images/adecuacion.svg'
+
+
+import { Image } from "astro:assets";
+---
+
+<section class="text-white mb-10">
+    <h1 class="font-bold text-center text-5xl ">Nuestros <span class="text-orange-400 font-mono">servicios</span></h1>
+    <div class="grid md:grid-cols-3 md:gap-8">
+      <div class="">
+          <Image src={fabricacion} alt="Fabricacion" class="" />
+          <div class="mx-5 md:mx-0">
+            <h1 class="font-bold text-5xl text-orange-400 text-center mb-20 mr-5">Fabricación</h1>
+            <p class="text-zinc-400 text-lg">
+              Transformamos el <strong class="text-orange-400">acero inoxidable</strong> en obras de arte funcionales. Nuestro
+              servicio de fabricación personalizada significa que tus visiones de
+              acero inoxidable se harán realidad. Ya sea un diseño intrincado para un
+              mueble único o componentes industriales robustos, nuestra precisión y
+              atención al detalle garantizan un producto final que no solo cumple,
+              sino que <strong class="text-orange-400">supera tus expectativas.</strong>
+            </p>
+          </div>
+      </div>
+  
+      <div>
+          <Image src={adecuacion} alt="Adecuacion" class="" />
+          <div class="mx-5 md:mx-0 ">
+              <h1 class="font-bold text-5xl text-orange-400 text-center mb-20 mr-5">Adecuación</h1>
+              <p class="text-zinc-400 text-lg">
+                  El cambio es una parte inevitable de la vida y tu acero inoxidable debería poder adaptarse a él. Nuestro servicio de adecuación te permite <strong class="text-orange-400">modificar</strong> tus estructuras y piezas de acero inoxidable existentes para satisfacer tus nuevas necesidades. Ya sea expandiendo estructuras, agregando nuevos componentes o mejorando la funcionalidad, <strong class="text-orange-400">hacemos que tu acero inoxidable sea tan versátil como tu imaginación.</strong>
+              </p>
+          </div>
+      </div>
+
+      <div >
+        <Image src={mantenimiento} alt="Mantenimiento" class="" />
+        <div class="mx-5 md:mx-0">
+            <h1 class="font-bold text-5xl text-orange-400 text-center mb-20 mr-5">Mantenimiento</h1>
+            <p class="text-zinc-400 text-lg">El acero inoxidable es famoso por su <strong class="text-orange-400">durabilidad</strong>, pero incluso los materiales más fuertes necesitan un poco de cuidado. Nuestro servicio de mantenimiento garantiza que tus inversiones de acero inoxidable sigan <strong class="text-orange-400">luciendo y funcionando como nuevas</strong>. Desde limpiezas y pulidos hasta inspecciones de integridad y reparaciones menores, nos aseguramos de que tu acero inoxidable esté siempre en su <strong class="text-orange-400">mejor forma</strong>.</p>
+        </div>
+    </div>
+
+    </div>
+  </section>

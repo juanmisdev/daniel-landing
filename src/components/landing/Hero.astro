@@ -4,9 +4,9 @@ import { Image } from "astro:assets";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 ---
 
-<section class="h-screen flex flex-col justify-center items-center mx-auto">
-  <div class="text-white flex flex-col md:flex-row md:gap-5 items-center md:mt-0 ">
-    <div class="w-full md:w-1/2">
+<section class="min-h-screen overflow-auto flex flex-col justify-center items-center mx-auto">
+  <div class="text-white flex flex-col md:flex-row md:gap-5 items-center mt-16 md:mt-0">
+    <div class="w-3/4 md:w-1/2">
       <Image
         src={welder}
         alt="Soldador"
@@ -15,12 +15,12 @@ import { FaFacebook, FaWhatsapp } from "react-icons/fa";
       />
     </div>
 
-    <div class="items-center flex flex-col gap-12 w-full md:w-1/2">
-      <h1 class="text-4xl md:text-5xl font-bold tracking-wide leading-snug">
+    <div class="items-center flex flex-col gap-5 md:gap-12 w-3/4 md:w-1/2">
+      <h1 class="text-3xl md:text-5xl font-bold tracking-wide leading-snug">
         Transformamos el <span class="text-orange-400">Acero Inoxidable</span> en
         Soluciones Duraderas
       </h1>
-      <p class="text-zinc-400 leading-loose">
+      <p class="text-sm md:text-base text-zinc-400 leading-loose">
         En Aceros Del Otún, combinamos la precisión de la soldadura con la
         resistencia del acero inoxidable para llevar tus proyectos al siguiente
         nivel.

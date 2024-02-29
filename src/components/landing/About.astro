@@ -1,0 +1,76 @@
+---
+import marco from '../../images/marco.svg'
+import mercado from '../../images/mercado_objetivo.svg'
+import excelecia from '../../images/excelencia.svg'
+import innovacion from '../../images/innovacion.svg'
+import compromiso from '../../images/compromiso.svg'
+import sostenibilidad from '../../images/sostenibilidad.svg'
+
+import { Image } from "astro:assets";
+
+---
+
+<section class="mt-20 relative">
+    <div class="flex justify-between items-center">
+        <Image src={marco} alt='marco' class='w-80 block'/>
+        <h1 class="text-white text-6xl text-center items-center gap-4">Acerca de <span class="text-orange-400">Nosotros</span></h1>
+        <Image src={marco} alt='marco' class="rotate-90 w-80"/>
+        
+    </div>
+    
+        <div class="absolute top-0 left-0 right-0 flex justify-center items-center w-4/4 mx-auto">
+            
+        <div class=" ml-5 grid grid-cols-4 grid-rows-4 gap-10 w-full mx-auto px-10">
+
+           
+            <div class="col-start-1 col-end-3 row-start-2 row-end-3 bg-zinc-800 text-zinc-400 rounded-lg p-10">
+                <h3 class="text-2xl text-orange-400 mb-5">Nuestra mision</h3>
+                <p class="">En Aceros del Otún, abrazamos la esencia del acero inoxidable y lo elevamos a nuevas alturas de excelencia. Nos dedicamos apasionadamente a transformar este metal en obras maestras funcionales, fusionando la creatividad con la precisión en cada detalle. Nuestra misión es convertir tus visiones de acero inoxidable en realidades tangibles.</p>
+            </div>
+
+            <div class="col-start-3 col-end-5 row-start-2 row-end-3 bg-zinc-800 text-zinc-400 rounded-lg p-10">
+                <h3 class="text-2xl text-orange-400 mb-5">Nuestra vision</h3>
+                <p>Visualizamos un futuro donde cada pieza de acero inoxidable creada por nosotros es una obra maestra que inspira, impresiona y perdura en el tiempo. Nuestra visión abarca la excelencia en cada detalle, desde la conceptualización hasta la entrega, y nos impulsa a explorar nuevas fronteras de diseño, sostenibilidad y funcionalidad.</p>
+            </div>
+
+            <div class="col-start-1 col-end-2 row-start-3 row-end-5 bg-zinc-800 text-zinc-400 rounded-lg p-10">
+                <h3 class="text-2xl text-orange-400 mb-5">Mercado objetivo</h3>
+                <p>En Aceros del Otún, nos embarcamos en la misión de servir a un mercado selecto y diverso que valora la calidad, la personalización y la innovación en el ámbito del acero inoxidable. Nos dirigimos a clientes exigentes y visionarios que buscan más que productos estándar; buscan obras maestras únicas que reflejen su estilo y necesidades específicas.</p>
+                <Image src={mercado} alt='mercado' class="mx-auto"/>
+            </div>
+
+            <div class="col-start-2 col-end-5 row-start-3 row-end-3 bg-zinc-800 text-zinc-400 rounded-lg p-10">
+                <h3 class="text-2xl text-orange-400 mb-5">Nuestro valores</h3>
+                <div class="flex flex-row justify-between px-10">
+                    <div class="flex flex-col">
+                        <Image src={excelecia} alt='excelecia' class="w-40 mx-auto"/>
+                        <p class="text-center">Excelencia</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <Image src={innovacion} alt='excelencia' class="w-40 mx-auto"/>
+                        <p class="text-center">Innovacion</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <Image src={compromiso} alt='compromiso' class="w-40 mx-auto"/>
+                        <p class="text-center">Compromiso con el cliente</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <Image src={sostenibilidad} alt='mercado' class="w-40 mx-auto"/>
+                        <p class="text-center">Sostenibilidad</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-start-2 col-end-5 row-start-4 row-end-5 bg-zinc-800 text-zinc-400 rounded-lg p-10">
+                <h3 class="text-2xl text-orange-400 mb-5">Breve historia de la empresa</h3>
+                <p>Hace cinco años, en Pereira, nació Aceros del Otún con una visión clara: transformar el acero inoxidable en obras maestras. Lo que comenzó como una idea se ha convertido en una trayectoria de innovación y calidad.
+
+                Desde entonces, hemos crecido y evolucionado, ganando la confianza de nuestros clientes y estableciéndonos como líderes en la industria. Nuestra dedicación a la excelencia en cada proyecto ha sido el motor de nuestro éxito.
+                    
+                Con cada pieza que creamos, contamos una historia de cinco años de crecimiento, desafíos superados y clientes satisfechos. Miramos hacia el futuro con gratitud y emoción, comprometidos a seguir siendo pioneros en la transformación del acero inoxidable y a construir un legado duradero.</p>
+            </div>
+
+        </div>
+    </div>
+    
+</section>

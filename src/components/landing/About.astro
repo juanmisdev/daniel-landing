@@ -10,17 +10,17 @@ import { Image } from "astro:assets";
 
 ---
 
-<section class="mt-20 relative">
-    <div class="flex justify-between items-center">
-        <Image src={marco} alt='marco' class='w-80 block'/>
-        <h1 class="text-white text-6xl text-center items-center gap-4">Acerca de <span class="text-orange-400">Nosotros</span></h1>
-        <Image src={marco} alt='marco' class="rotate-90 w-80"/>
+<section class="mt-20 md:relative">
+    <div class="md:flex justify-between items-center">
+        <Image src={marco} alt='marco' class='w-80 hidden md:block '/>
+        <h1 class="text-white text-6xl text-center items-center gap-4 mb-20 md:mb-0">Acerca de <span class="text-orange-400">Nosotros</span></h1>
+        <Image src={marco} alt='marco' class="rotate-90 w-80 hidden md:block"/>
         
     </div>
     
-        <div class="absolute top-0 left-0 right-0 flex justify-center items-center w-4/4 mx-auto">
+        <div class="md:absolute top-0 left-0 right-0 flex justify-center items-center w-4/4 mx-auto">
             
-        <div class=" ml-5 grid grid-cols-4 grid-rows-4 gap-10 w-full mx-auto px-10">
+        <div class=" md:ml-5 flex flex-col md:grid grid-cols-1 md:grid-cols-4 grid-rows-4 gap-10 w-full mx-auto px-10">
 
            
             <div class="col-start-1 col-end-3 row-start-2 row-end-3 bg-zinc-800 text-zinc-400 rounded-lg p-10">
@@ -41,7 +41,7 @@ import { Image } from "astro:assets";
 
             <div class="col-start-2 col-end-5 row-start-3 row-end-3 bg-zinc-800 text-zinc-400 rounded-lg p-10">
                 <h3 class="text-2xl text-orange-400 mb-5">Nuestro valores</h3>
-                <div class="flex flex-row justify-between px-10">
+                <div class="flex flex-row justify-between px-10 items-baseline">
                     <div class="flex flex-col">
                         <Image src={excelecia} alt='excelecia' class="w-40 mx-auto"/>
                         <p class="text-center">Excelencia</p>

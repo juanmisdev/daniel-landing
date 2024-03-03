@@ -1,4 +1,15 @@
 import animations from '@midudev/tailwind-animations'
+const plugin = require('tailwindcss/plugin')
+const backfaceVisibility = plugin(function({addUtilities}) {
+	addUtilities({
+	  '.backface-visible': {
+		'backface-visibility': 'visible',
+	  },
+	  '.backface-hidden': {
+		'backface-visibility': 'hidden',
+	  }
+	})
+  });
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -6,5 +17,5 @@ export default {
 	theme: {
 		extend: {},
 	},
-	plugins: [animations],
+	plugins: [animations, backfaceVisibility],
 }

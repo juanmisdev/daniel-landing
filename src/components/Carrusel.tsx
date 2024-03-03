@@ -1,6 +1,6 @@
-// import Gallery from "react-image-gallery";
-// const ImageGallery = (Gallery as any).default ?? Gallery;
-// import 'react-image-gallery/styles/css/image-gallery.css'
+import Gallery from "react-image-gallery";
+const ImageGallery = (Gallery as any).default ?? Gallery;
+import 'react-image-gallery/styles/css/image-gallery.css'
 
 function Carrusel() {
 

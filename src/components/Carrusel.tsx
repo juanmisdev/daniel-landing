@@ -1,4 +1,5 @@
-import ImageGallery from "react-image-gallery";
+import Gallery from "react-image-gallery";
+const ImageGallery = (Gallery as any).default ?? Gallery;
 import 'react-image-gallery/styles/css/image-gallery.css'
 
 function Carrusel() {
@@ -7,7 +8,7 @@ function Carrusel() {
         {
             original: 'https://picsum.photos/id/1018/1000/600/',
             thumbnail: 'https://picsum.photos/id/1018/250/150/',
-        },
+        }
     ]
 
   return (

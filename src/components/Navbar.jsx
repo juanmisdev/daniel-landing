@@ -7,12 +7,12 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: "/",
+      link: "#About",
       name: "Acerca de Nosotros",
     },
     {
       id: 2,
-      link: "/",
+      link: "#Work",
       name: "Nuestros Trabajos",
     },
   ];
@@ -21,7 +21,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav z-50">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
-        <a href='/' className="hover:text-orange-400">
+        <a href='#Hero' className="hover:text-orange-400">
           <h1 className="text-3xl font-signature ml-2">
               Aceros Del Otún
           </h1>
